@@ -1,4 +1,4 @@
-module main
+module github.com/jmarcantony/CLI-Bouncing-Ball
 
 go 1.16
 
