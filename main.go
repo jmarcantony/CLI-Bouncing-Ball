@@ -19,7 +19,6 @@ func main() {
 	x_velocity := 1
 	y_velocity := 1
 	first := true
-	_ = x + y + x_velocity + y_velocity
 	for {
 		board := [height][width]bool{}
 		board[y][x] = true
