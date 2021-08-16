@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	height = 6                    // Atleast 3
+	height = 10                    // Atleast 3
 	width  = height * 4           // Atleast 12
 	delay  = time.Second / height // Dynamic Delay According To Height
 )
