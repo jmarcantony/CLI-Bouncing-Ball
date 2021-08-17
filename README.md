@@ -3,8 +3,12 @@ Bouncing Ball Animation in CLI using Go 👨‍💻
 
 ## Written in Go 1.16
 
-# Installation
-* `git clone https://github.com/jmarcantony/CLI-Bouncing-Ball.git`
-* `cd CLI-Bouncing-Ball`
-* `go get`
-* `go run main.go`
+# Instalation on Windows
+* `go get github.com/jmarcantony/CLI-Bouncing-Ball`
+* `cd %GOPATH%\bin`
+* `CLI-Bouncing-Ball.exe`
+
+# Instalation on Linux and Unix like OS
+* `go get github.com/jmarcantony/CLI-Bouncing-Ball`
+* `cd $GOPATH/bin`
+* `./CLI-Bouncing-Ball`
