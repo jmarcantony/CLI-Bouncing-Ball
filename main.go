@@ -8,8 +8,8 @@ import (
 )
 
 const (
-	height = 10                   // Atleast 3
-	width  = height * 4           // Atleast 12
+	height = 20                   // Atleast 2
+	width  = height * 4           // Atleast 8
 	delay  = time.Second / height // Dynamic Delay According To Height
 )
 
@@ -42,9 +42,16 @@ func main() {
 		}
 		fmt.Printf("\nX: %d, Y: %d\n", x, y)
 		fmt.Printf("\nX Velocity: %d, Y Velocity: %d\n", x_velocity, y_velocity)
-		if y == height-1 || (y == 0 && !first) {
+		if !first && x == 0 {
+			x_velocity *= -1
+		}
+		if !first && y == 0 {
 			y_velocity *= -1
-		} else if x == width-1 || (x == 0 && !first) {
+		}
+		if y == height-1 {
+			y_velocity *= -1
+		}
+		if x == width-1 {
 			x_velocity *= -1
 		}
 		if first {
